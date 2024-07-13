@@ -26,7 +26,7 @@ def webm_to_wav(webm_data):
     audio.export(wav_io, format="wav")
     return wav_io.getvalue()
 
-async def wav_to_text(wav_data):
+def wav_to_text(wav_data):
     recognizer = sr.Recognizer()
     with sr.AudioFile(io.BytesIO(wav_data)) as source:
         audio = recognizer.record(source)
@@ -51,7 +51,7 @@ async def upload_audio(request):
                 f.write(wav_data)
             print(f"Saved audio file: {filename}")
             
-            text = await wav_to_text(wav_data)
+            text = wav_to_text(wav_data)
 
             is_throw, color = filterText(text)
 
