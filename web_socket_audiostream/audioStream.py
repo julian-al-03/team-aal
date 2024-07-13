@@ -61,4 +61,4 @@ app.router.add_get('/ws', audio_stream)
 app.router.add_get('/', serve_html)
 
 if __name__ == '__main__':
-    web.run_app(app, host='localhost', port=8765)
+    web.run_app(app, host='0.0.0.0', port=8765)
