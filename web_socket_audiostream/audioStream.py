@@ -10,6 +10,8 @@ from speechToText import wav_to_text
 # Ensure the audio_files directory exists
 os.makedirs('audio_files', exist_ok=True)
 
+import traceback
+
 async def audio_stream(request):
     ws = web.WebSocketResponse()
     await ws.prepare(request)
@@ -26,31 +28,46 @@ async def audio_stream(request):
                 elif msg.data == "stop":
                     print("Stopping recording")
                     if audio_data:
-                        with wave.open(filename, 'wb') as wav_file:
-                            wav_file.setnchannels(1)
-                            wav_file.setsampwidth(2)
-                            wav_file.setframerate(44100)
-                            wav_file.writeframes(audio_data)
-                        print(f"Saved audio file: {filename}")
-                        await ws.send_str(f"Audio saved as {filename}")
-                        
-                        # Perform speech-to-text conversion
                         try:
-                            text = wav_to_text(filename)
-                            await ws.send_str(f"Transcription: {text}")
+                            print(f"Attempting to save file: {filename}")
+                            with wave.open(filename, 'wb') as wav_file:
+                                wav_file.setnchannels(1)
+                                wav_file.setsampwidth(2)
+                                wav_file.setframerate(44100)
+                                wav_file.writeframes(audio_data)
+                            print(f"Saved audio file: {filename}")
+                            await ws.send_str(f"Audio saved as {filename}")
+                            
+                            # Perform speech-to-text conversion
+                            try:
+                                print("Starting speech-to-text conversion")
+                                text = wav_to_text(filename)
+                                print(f"Speech-to-text result: {text}")
+                                await ws.send_str(f"Transcription: {text}")
+                            except Exception as e:
+                                print(f"Error in speech-to-text conversion: {e}")
+                                traceback.print_exc()
+                                await ws.send_str(f"Error in speech-to-text conversion: {str(e)}")
                         except Exception as e:
-                            print(f"Error in speech-to-text conversion: {e}")
-                            await ws.send_str(f"Error in speech-to-text conversion: {str(e)}")
-                        audio_data = b''
+                            print(f"Error saving audio file: {e}")
+                            traceback.print_exc()
+                            await ws.send_str(f"Error saving audio file: {str(e)}")
+                        finally:
+                            audio_data = b''
+                    else:
+                        print("No audio data to save")
             elif msg.type == WSMsgType.BINARY:
                 audio_data += msg.data
+                print(f"Received {len(msg.data)} bytes of audio data")
             elif msg.type == WSMsgType.ERROR:
                 print('WebSocket connection closed with exception %s' % ws.exception())
+    except Exception as e:
+        print(f"Unexpected error in audio_stream: {e}")
+        traceback.print_exc()
     finally:
         print("Client disconnected")
     
     return ws
-
 async def serve_html(request):
     return web.FileResponse('index.html')
 
