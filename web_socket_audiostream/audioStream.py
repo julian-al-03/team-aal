@@ -53,12 +53,13 @@ async def audio_stream(request):
     
     return ws
 
-async def serve_html(request):
-    return web.FileResponse('index.html')
+async def serve_static(request):
+    return web.FileResponse(f'.{request.path}')
 
 app = web.Application()
 app.router.add_get('/ws', audio_stream)
-app.router.add_get('/', serve_html)
+app.router.add_get('/', serve_static)
+app.router.add_static('/', '.', show_index=True)
 
 if __name__ == '__main__':
     web.run_app(app, host='0.0.0.0', port=8765)
