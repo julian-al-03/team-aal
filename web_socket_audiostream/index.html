@@ -19,7 +19,7 @@
         const transcriptionDiv = document.getElementById('transcription');
 
         function initWebSocket() {
-            websocket = new WebSocket(`ws://${window.location.host}/ws`);
+            websocket = new WebSocket(`wss://${window.location.host}/ws`);
 
             websocket.onopen = function(event) {
                 statusDiv.textContent = 'Connected to server';
