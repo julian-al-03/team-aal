@@ -5,4 +5,5 @@ numpy
 opencv-python-headless
 SpeechRecognition
 pydub
+aiohttp
 adafruit-circuitpython-servokit

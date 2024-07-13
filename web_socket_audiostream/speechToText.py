@@ -25,6 +25,6 @@ def wav_to_text(wav_path):
     return text
 
 # Example usage
-wav_path = './test.wav'
-text = wav_to_text(wav_path)
-print(text)
+# wav_path = './test.wav'
+# text = wav_to_text(wav_path)
+# print(text)
