@@ -1,78 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>WebSocket Audio Streaming</title>
+    <title>Audio Recorder</title>
 </head>
 <body>
-    <button id="startButton">Start Recording</button>
-    <button id="stopButton">Stop Recording</button>
+    <button id="startButton" disabled>Start Recording</button>
+    <button id="stopButton" disabled>Stop Recording</button>
+    <div id="status"></div>
+    <div id="transcription"></div>
 
     <script>
-        let mediaRecorder;
-        let socket;
-        let audioContext;
-        let sourceNode;
-        let scriptNode;
-
+        let websocket;
         const startButton = document.getElementById('startButton');
         const stopButton = document.getElementById('stopButton');
+        const statusDiv = document.getElementById('status');
+        const transcriptionDiv = document.getElementById('transcription');
 
-        startButton.onclick = startRecording;
-        stopButton.onclick = stopRecording;
+        function initWebSocket() {
+            // Make sure to use the correct IP and port
+            websocket = new WebSocket('ws://172.16.25.197:8765/ws');
 
-        function startRecording() {
-            socket = new WebSocket('ws://localhost:8765');
-            
-            socket.onopen = function(e) {
-                console.log("WebSocket connection established");
-                socket.send("start");
-
-                navigator.mediaDevices.getUserMedia({ audio: true })
-                    .then(stream => {
-                        audioContext = new AudioContext();
-                        sourceNode = audioContext.createMediaStreamSource(stream);
-                        scriptNode = audioContext.createScriptProcessor(4096, 1, 1);
-
-                        sourceNode.connect(scriptNode);
-                        scriptNode.connect(audioContext.destination);
-
-                        scriptNode.onaudioprocess = function(audioProcessingEvent) {
-                            if (socket.readyState === WebSocket.OPEN) {
-                                var inputBuffer = audioProcessingEvent.inputBuffer;
-                                var inputData = inputBuffer.getChannelData(0);
-                                socket.send(convertFloat32ToInt16(inputData));
-                            }
-                        };
-                    });
+            websocket.onopen = function(event) {
+                statusDiv.textContent = 'Connected to server';
+                startButton.disabled = false;  // Enable start button when connected
             };
 
-            socket.onmessage = function(event) {
-                console.log('Message from server:', event.data);
+            websocket.onmessage = function(event) {
+                if (event.data.startsWith('Audio saved as')) {
+                    statusDiv.textContent = event.data;
+                } else if (event.data.startsWith('Transcription:')) {
+                    transcriptionDiv.textContent = event.data;
+                }
+            };
+
+            websocket.onerror = function(error) {
+                console.error('WebSocket Error:', error);
+                statusDiv.textContent = 'WebSocket error occurred';
+            };
+
+            websocket.onclose = function(event) {
+                statusDiv.textContent = 'Disconnected from server';
+                startButton.disabled = true;
+                stopButton.disabled = true;
             };
         }
 
-        function stopRecording() {
-            if (scriptNode) {
-                scriptNode.disconnect();
-                sourceNode.disconnect();
+        startButton.onclick = function() {
+            if (websocket.readyState === WebSocket.OPEN) {
+                websocket.send('start');
+                startButton.disabled = true;
+                stopButton.disabled = false;
+                statusDiv.textContent = 'Recording...';
+            } else {
+                statusDiv.textContent = 'WebSocket is not connected';
             }
-            if (audioContext) {
-                audioContext.close();
-            }
-            if (socket) {
-                socket.send("stop");
-                socket.close();
-            }
-        }
+        };
 
-        function convertFloat32ToInt16(buffer) {
-            var l = buffer.length;
-            var buf = new Int16Array(l);
-            while (l--) {
-                buf[l] = Math.min(1, buffer[l]) * 0x7FFF;
+        stopButton.onclick = function() {
+            if (websocket.readyState === WebSocket.OPEN) {
+                websocket.send('stop');
+                startButton.disabled = false;
+                stopButton.disabled = true;
+                statusDiv.textContent = 'Stopped recording';
+            } else {
+                statusDiv.textContent = 'WebSocket is not connected';
             }
-            return buf.buffer;
-        }
+        };
+
+        // Initialize WebSocket connection
+        initWebSocket();
     </script>
 </body>
 </html>
