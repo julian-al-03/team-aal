@@ -8,6 +8,7 @@ import traceback
 from configCrane import execute
 from filterText import filterText
 from cam import capture_and_save_frame
+from imageDetect import get_color_positions
 
 # Ensure the audio_files directory exists
 os.makedirs('audio_files', exist_ok=True)
@@ -25,7 +26,7 @@ def webm_to_wav(webm_data):
     audio.export(wav_io, format="wav")
     return wav_io.getvalue()
 
-def wav_to_text(wav_data):
+async def wav_to_text(wav_data):
     recognizer = sr.Recognizer()
     with sr.AudioFile(io.BytesIO(wav_data)) as source:
         audio = recognizer.record(source)
@@ -50,12 +51,17 @@ async def upload_audio(request):
                 f.write(wav_data)
             print(f"Saved audio file: {filename}")
             
-            text = wav_to_text(wav_data)
+            text = await wav_to_text(wav_data)
 
             is_throw, color = filterText(text)
 
-            ml_result = capture_and_save_frame()
-            index = get_color_index(ml_result, color)
+            if color == "":
+                print("No color found")
+                return
+
+            path = capture_and_save_frame()
+            ml = get_color_positions(path)
+            index = get_color_index(ml, color)
 
             execute(is_throw, index)
 
