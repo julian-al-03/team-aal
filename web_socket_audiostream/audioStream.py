@@ -5,6 +5,8 @@ import speech_recognition as sr
 from pydub import AudioSegment
 import io
 import traceback
+from configCrane import execute
+from filterText import filterText
 
 # Ensure the audio_files directory exists
 os.makedirs('audio_files', exist_ok=True)
@@ -42,6 +44,9 @@ async def upload_audio(request):
             print(f"Saved audio file: {filename}")
             
             text = wav_to_text(wav_data)
+            
+            is_throw, color = filterText(text)
+            execute(is_throw, color)
             return web.json_response({"message": f"Audio saved as {filename}", "transcription": text})
     except Exception as e:
         print(f"Error processing audio: {e}")
