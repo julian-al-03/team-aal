@@ -1,0 +1,693 @@
+version 1 is deprecated, update to latest version
+  original_client = mqtt.Client(client_id="TXT Controller")
+Connected to original broker
+Reconnected successfully!
+Connected to original broker
+Reconnected successfully!
+Connected to original broker
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:02:43.948Z"}
+Topic: fl/o/nfc/ds 
+ Payload: {"ts":"2024-07-12T20:02:41.827Z","cmd":"read_uid"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:02:45.770Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:02:43.918Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:02:43.919Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:02:43.889Z","station":"hbw","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:02:43.952Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:02:43.948Z","station":"vgr","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:02:43.954Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:02:43.889Z","stockItems":[{"workpiece":{"id":"0","state":"","type":""},"location":"A1"},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:02:46.187Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:02:45.955Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:02:45.943Z","station":"hbw","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:02:45.997Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:02:45.997Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:02:45.986Z","station":"vgr","code":1,"description":"","active":false,"target":""}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:02:45.986Z"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:02:47.204Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:02:45.943Z","stockItems":[{"workpiece":{"id":"0","state":"","type":""},"location":"A1"},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:02:45.957Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: fl/o/nfc/ds 
+ Payload: {"ts":"2024-07-12T20:02:46.874Z","cmd":"read_uid"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:02:48.205Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:02:47.980Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:02:47.970Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:02:47.970Z","station":"hbw","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:02:48.020Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:02:48.020Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:02:48.009Z","station":"vgr","code":1,"description":"","active":false,"target":""}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:02:48.009Z"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:02:49.212Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:02:47.970Z","stockItems":[{"workpiece":{"id":"0","state":"","type":""},"location":"A1"},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:02:50.194Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:02:50.004Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:02:49.994Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:02:49.993Z","station":"hbw","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:02:50.044Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:02:50.044Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:02:50.033Z","station":"vgr","code":1,"description":"","active":false,"target":""}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:02:50.033Z"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:02:51.211Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:02:49.993Z","stockItems":[{"workpiece":{"id":"0","state":"","type":""},"location":"A1"},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:02:52.211Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:02:52.027Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:02:52.018Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:02:52.017Z","station":"hbw","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:02:52.067Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:02:52.068Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:02:52.056Z","station":"vgr","code":1,"description":"","active":false,"target":""}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:02:52.056Z"}
+Topic: fl/o/nfc/ds 
+ Payload: {"ts":"2024-07-12T20:02:51.906Z","cmd":"read_uid"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:02:53.230Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:02:52.017Z","stockItems":[{"workpiece":{"id":"0","state":"","type":""},"location":"A1"},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:02:54.218Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:02:54.051Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:02:54.041Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:02:54.040Z","station":"hbw","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:02:54.091Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:02:54.091Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:02:54.080Z","station":"vgr","code":1,"description":"","active":false,"target":""}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:02:54.080Z"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:02:55.220Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:02:54.040Z","stockItems":[{"workpiece":{"id":"0","state":"","type":""},"location":"A1"},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:02:56.222Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:02:56.076Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:02:56.066Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:02:56.065Z","station":"hbw","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:02:56.116Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:02:56.117Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:02:56.105Z","station":"vgr","code":1,"description":"","active":false,"target":""}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:02:56.105Z"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:02:57.240Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:02:56.065Z","stockItems":[{"workpiece":{"id":"0","state":"","type":""},"location":"A1"},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: fl/o/nfc/ds 
+ Payload: {"ts":"2024-07-12T20:02:56.943Z","cmd":"read_uid"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:02:58.223Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:02:58.096Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:02:58.086Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:02:58.086Z","station":"hbw","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:02:58.136Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:02:58.136Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:02:58.126Z","station":"vgr","code":1,"description":"","active":false,"target":""}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:02:58.126Z"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:02:59.238Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:02:58.086Z","stockItems":[{"workpiece":{"id":"0","state":"","type":""},"location":"A1"},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:03:00.215Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:03:00.126Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:03:00.116Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:03:00.115Z","station":"hbw","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:03:00.176Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:03:00.176Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:03:00.155Z","station":"vgr","code":1,"description":"","active":false,"target":""}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:03:00.155Z"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:03:01.248Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:03:00.115Z","stockItems":[{"workpiece":{"id":"0","state":"","type":""},"location":"A1"},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:03:02.215Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:03:02.146Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:03:02.136Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:03:02.135Z","station":"hbw","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:03:02.196Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:03:02.196Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:03:02.175Z","station":"vgr","code":1,"description":"","active":false,"target":""}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:03:02.175Z"}
+Topic: fl/o/nfc/ds 
+ Payload: {"ts":"2024-07-12T20:03:01.984Z","cmd":"read_uid"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:03:03.251Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:03:02.135Z","stockItems":[{"workpiece":{"id":"0","state":"","type":""},"location":"A1"},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Reconnected successfully!
+Connected to original broker
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:03:08.219Z","stockItems":[{"workpiece":{"id":"0","state":"","type":""},"location":"A1"},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:03:10.263Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:03:10.277Z","station":"dsi","code":0,"description":"","target":"","active":true}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:03:10.247Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:03:10.246Z","station":"hbw","code":2,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:03:10.326Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:03:10.327Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:03:10.295Z","station":"vgr","code":2,"description":"","active":false,"target":""}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:03:10.295Z"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:03:11.266Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:03:10.246Z","stockItems":[{"workpiece":{"id":"0","state":"","type":""},"location":"A1"},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Reconnected successfully!
+Connected to original broker
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:03:26.460Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:03:26.459Z","station":"hbw","code":2,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:03:26.519Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:03:26.520Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:03:26.489Z","station":"vgr","code":2,"description":"","active":true,"target":"hbw"}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:03:26.489Z"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:03:27.320Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:03:26.459Z","stockItems":[{"workpiece":{},"location":""},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:03:28.299Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:03:28.485Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:03:28.485Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:03:28.484Z","station":"hbw","code":2,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:03:28.545Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:03:28.545Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:03:28.514Z","station":"vgr","code":2,"description":"","active":true,"target":"hbw"}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:03:28.514Z"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:03:29.331Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:03:28.484Z","stockItems":[{"workpiece":{},"location":""},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+{err}. Reconnect failed. Retrying...
+Reconnected successfully!
+Connected to original broker
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:03:46.903Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:03:46.881Z","station":"hbw","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:03:46.939Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:03:46.941Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Reconnected successfully!
+Connected to original broker
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:01.974Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:04:01.268Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:04:01.269Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:04:01.243Z","stockItems":[{"workpiece":{},"location":""},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:04:01.243Z","station":"hbw","code":2,"description":"","active":true,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:04:01.283Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:04:01.284Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:04:01.274Z"}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:04:01.255Z","station":"vgr","code":2,"description":"","active":false,"target":""}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:02.585Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/alert 
+ Payload: {"code":0,"data":"","id":"","ts":"1601-01-01T00:00:00.000Z"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:04:01.243Z","stockItems":[{"workpiece":{},"location":""},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:04:03.307Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:04:03.308Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: fl/o/nfc/ds 
+ Payload: {"ts":"2024-07-12T20:03:25.239Z","cmd":"delete"}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:04:03.294Z","station":"hbw","code":2,"description":"","active":true,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:04:03.325Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:04:03.317Z","station":"vgr","code":2,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:04:03.329Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:04:03.317Z"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:04.444Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:04:03.307Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:04:05.356Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:04:05.348Z","station":"hbw","code":2,"description":"","active":true,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:04:05.373Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/alert 
+ Payload: {"code":0,"data":"","id":"","ts":"1601-01-01T00:00:00.000Z"}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:04:05.368Z","station":"vgr","code":2,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:04:05.374Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:04:05.368Z"}
+Topic: fl/o/nfc/ds 
+ Payload: {"ts":"2024-07-12T20:03:25.239Z","cmd":"delete"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:06.027Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:04:05.348Z","stockItems":[{"workpiece":{},"location":""},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:04:05.354Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:04:05.356Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:04:05.348Z","station":"hbw","code":2,"description":"","active":true,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:04:05.373Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/alert 
+ Payload: {"code":0,"data":"","id":"","ts":"1601-01-01T00:00:00.000Z"}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:04:05.368Z","station":"vgr","code":2,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:04:05.374Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:04:05.368Z"}
+Topic: fl/o/nfc/ds 
+ Payload: {"ts":"2024-07-12T20:03:25.239Z","cmd":"delete"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:07.351Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:04:05.348Z","stockItems":[{"workpiece":{},"location":""},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:04:07.402Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:04:07.404Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:04:07.397Z","station":"hbw","code":2,"description":"","active":true,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:04:07.425Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/alert 
+ Payload: {"code":0,"data":"","id":"","ts":"1601-01-01T00:00:00.000Z"}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:04:07.417Z","station":"vgr","code":2,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:04:07.427Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:04:07.417Z"}
+Topic: fl/o/nfc/ds 
+ Payload: {"ts":"2024-07-12T20:03:25.239Z","cmd":"delete"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:09.208Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:04:07.397Z","stockItems":[{"workpiece":{},"location":""},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:04:09.457Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:04:09.458Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:04:09.450Z","station":"hbw","code":2,"description":"","active":true,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:04:09.474Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:04:09.478Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:04:09.465Z","station":"vgr","code":2,"description":"","active":false,"target":""}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:04:09.465Z"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:10.846Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:04:09.450Z","stockItems":[{"workpiece":{},"location":""},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:04:11.517Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:04:11.518Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:04:11.508Z","station":"hbw","code":2,"description":"","active":true,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:04:11.514Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/alert 
+ Payload: {"code":0,"data":"","id":"","ts":"1601-01-01T00:00:00.000Z"}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:04:11.527Z","station":"vgr","code":2,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:04:11.515Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:04:11.527Z"}
+Topic: fl/o/nfc/ds 
+ Payload: {"ts":"2024-07-12T20:03:25.239Z","cmd":"delete"}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:04:11.517Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:04:11.518Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:04:11.508Z","station":"hbw","code":2,"description":"","active":true,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:04:11.514Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:04:11.515Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:04:11.527Z","station":"vgr","code":2,"description":"","active":false,"target":""}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:12.736Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:04:11.508Z","stockItems":[{"workpiece":{},"location":""},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:13.728Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:04:13.555Z","stockItems":[{"workpiece":{"id":"0","state":"","type":""},"location":"A1"},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:04:13.556Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:04:13.556Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:04:13.555Z","station":"hbw","code":2,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:04:13.555Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Reconnected successfully!
+Connected to original broker
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:04:15.575Z","station":"hbw","code":2,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:04:15.576Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:04:15.576Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:04:15.612Z"}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:04:15.612Z","station":"vgr","code":2,"description":"","active":false,"target":""}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:17.768Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:04:17.609Z","stockItems":[{"workpiece":{"id":"0","state":"","type":""},"location":"A1"},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:04:17.597Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:04:17.599Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:04:17.609Z","station":"hbw","code":2,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:04:17.612Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:04:17.614Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:04:17.631Z","station":"vgr","code":2,"description":"","active":false,"target":""}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:04:17.631Z"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:18.756Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:19.755Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:20.756Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:04:19.660Z","stockItems":[{"workpiece":{"id":"0","state":"","type":""},"location":"A1"},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:04:19.646Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:04:19.637Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:04:19.660Z","station":"hbw","code":2,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:04:19.660Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:04:19.660Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:04:19.670Z","station":"vgr","code":2,"description":"","active":false,"target":""}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:04:19.670Z"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:21.764Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:04:22.389Z"}
+Topic: fl/o/nfc/ds 
+ Payload: {"ts":"2024-07-12T20:04:22.409Z","cmd":"read_uid"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:22.775Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:04:21.687Z","stockItems":[{"workpiece":{"id":"0","state":"","type":""},"location":"A1"},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:04:21.665Z","station":"dsi","code":1,"description":"","target":"","active":false}
+{err}. Reconnect failed. Retrying...
+Reconnected successfully!
+Connected to original broker
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:04:31.786Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:04:31.786Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:04:31.848Z","station":"hbw","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:04:31.848Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:04:31.848Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:04:31.847Z","station":"vgr","code":1,"description":"","active":false,"target":""}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:33.819Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:35.085Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:04:33.878Z","stockItems":[{"workpiece":{"id":"0","state":"","type":""},"location":"A1"},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:04:33.809Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:04:35.851Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:04:35.921Z","station":"hbw","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:04:35.925Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:04:35.927Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:04:35.915Z","station":"vgr","code":1,"description":"","active":false,"target":""}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:04:35.915Z"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:36.448Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:04:35.915Z"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:36.814Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:04:35.921Z","stockItems":[{"workpiece":{"id":"0","state":"","type":""},"location":"A1"},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:04:35.850Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:04:35.851Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:04:35.921Z","station":"hbw","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:04:35.925Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:04:35.927Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:04:35.915Z","station":"vgr","code":1,"description":"","active":false,"target":""}
+Topic: fl/o/nfc/ds 
+ Payload: {"ts":"2024-07-12T20:04:37.560Z","cmd":"read_uid"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:37.799Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:04:37.962Z"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:38.839Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:04:37.962Z","stockItems":[{"workpiece":{"id":"0","state":"","type":""},"location":"A1"},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:04:37.892Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:04:37.892Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:04:37.962Z","station":"hbw","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:04:37.963Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:04:37.963Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:04:37.962Z","station":"vgr","code":1,"description":"","active":false,"target":""}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:39.854Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:04:39.985Z"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:40.820Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:04:39.986Z","stockItems":[{"workpiece":{"id":"0","state":"","type":""},"location":"A1"},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:04:39.916Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:04:39.916Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:04:39.986Z","station":"hbw","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:04:39.986Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:04:39.985Z","station":"vgr","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:04:39.986Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:41.816Z","state":"IN_PROCESS","type":"WHITE"}
+Reconnected successfully!
+Connected to original broker
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:04:52.137Z","stockItems":[{"workpiece":{"id":"0","state":"","type":""},"location":"A1"},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:04:54.102Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:04:56.139Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:04:56.209Z","station":"hbw","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:04:56.213Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:57.243Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:04:56.205Z"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:57.307Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:04:56.138Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:04:56.139Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: fl/o/nfc/ds 
+ Payload: {"ts":"2024-07-12T20:04:52.684Z","cmd":"read_uid"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:04:56.209Z","stockItems":[{"workpiece":{"id":"0","state":"","type":""},"location":"A1"},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:04:56.209Z","station":"hbw","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:04:56.213Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:04:56.190Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:57.836Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:04:56.205Z","station":"vgr","code":1,"description":"","active":false,"target":""}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:04:56.205Z"}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:04:56.138Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:04:56.139Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:57.949Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:04:56.209Z","stockItems":[{"workpiece":{"id":"0","state":"","type":""},"location":"A1"},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: fl/o/nfc/ds 
+ Payload: {"ts":"2024-07-12T20:04:57.745Z","cmd":"read_uid"}
+Topic: f/i/state/sld 
+ Payload: {"ts":"2024-07-12T20:04:58.240Z","station":"sld","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/vgr 
+ Payload: {"ts":"2024-07-12T20:04:58.249Z","station":"vgr","code":1,"description":"","active":false,"target":""}
+Topic: i/ptu/pos 
+ Payload: {"pan":0.9827522039413452,"tilt":-0.5900000333786011,"ts":"2024-07-12T20:04:58.249Z"}
+Topic: f/i/order 
+ Payload: {"ts":"2024-07-12T20:04:58.895Z","state":"IN_PROCESS","type":"WHITE"}
+Topic: f/i/stock 
+ Payload: {"ts":"2024-07-12T20:04:58.249Z","stockItems":[{"workpiece":{"id":"0","state":"","type":""},"location":"A1"},{"workpiece":{"id":"04c34892186581","state":"RAW","type":"WHITE"},"location":"A2"},{"workpiece":{"id":"04c34892186582","state":"RAW","type":"WHITE"},"location":"A3"},{"workpiece":{"id":"04c34892186583","state":"RAW","type":"RED"},"location":"B1"},{"workpiece":{"id":"04c34892186584","state":"RAW","type":"RED"},"location":"B2"},{"workpiece":{"id":"04c34892186585","state":"RAW","type":"RED"},"location":"B3"},{"workpiece":{"id":"04c34892186586","state":"RAW","type":"BLUE"},"location":"C1"},{"workpiece":{"id":"04c34892186587","state":"RAW","type":"BLUE"},"location":"C2"},{"workpiece":{"id":"04c34892186588","state":"RAW","type":"BLUE"},"location":"C3"}]}
+Topic: f/i/state/dsi 
+ Payload: {"ts":"2024-07-12T20:04:58.179Z","station":"dsi","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/dso 
+ Payload: {"ts":"2024-07-12T20:04:58.179Z","station":"dso","code":1,"description":"","target":"","active":false}
+Topic: f/i/state/hbw 
+ Payload: {"ts":"2024-07-12T20:04:58.249Z","station":"hbw","code":1,"description":"","active":false,"target":""}
+Topic: f/i/state/mpo 
+ Payload: {"ts":"2024-07-12T20:04:58.250Z","station":"mpo","code":1,"description":"","active":false,"target":""}
+Reconnected successfully!
+Connected to original broker
