@@ -1,7 +1,12 @@
 import cv2
 import numpy as np
 
-def get_color_positions(image_path, coordinates):
+def get_color_positions(image_path):
+    coordinates = [
+    [0, 50, 5, 5],  # Example coordinates for first area
+    [160, 100, 5, 5],  # Example coordinates for second area
+    [306, 53, 5, 5]   # Example coordinates for third area
+    ]
     # Read the image
     img = cv2.imread(image_path)
     
@@ -30,15 +35,3 @@ def get_color_positions(image_path, coordinates):
             color_positions['white'] = i
     
     return color_positions
-
-# Example usage
-image_path = 'peter.jpg'
-# Coordinates in format: [x, y, width, height]
-coordinates = [
-    [0, 50, 5, 5],  # Example coordinates for first area
-    [160, 100, 5, 5],  # Example coordinates for second area
-    [306, 53, 5, 5]   # Example coordinates for third area
-]
-
-positions = get_color_positions(image_path, coordinates)
-print(positions)

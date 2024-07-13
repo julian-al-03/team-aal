@@ -7,9 +7,16 @@ import io
 import traceback
 from configCrane import execute
 from filterText import filterText
+from cam import capture_and_save_frame
 
 # Ensure the audio_files directory exists
 os.makedirs('audio_files', exist_ok=True)
+
+def get_color_index(color_positions, target_color):
+    for color, index in color_positions.items():
+        if color.lower() == target_color.lower():
+            return index
+    return None  # Return None if the color is not found
 
 def webm_to_wav(webm_data):
     # Convert webm data to wav
@@ -44,9 +51,14 @@ async def upload_audio(request):
             print(f"Saved audio file: {filename}")
             
             text = wav_to_text(wav_data)
-            
+
             is_throw, color = filterText(text)
-            execute(is_throw, color)
+
+            ml_result = capture_and_save_frame()
+            index = get_color_index(ml_result, color)
+
+            execute(is_throw, index)
+
             return web.json_response({"message": f"Audio saved as {filename}", "transcription": text})
     except Exception as e:
         print(f"Error processing audio: {e}")
