@@ -19,8 +19,5 @@ def filterText(text: str) -> Tuple[bool, Literal["red","blue","white"]]:
         elif word == "white":
             color = "white"
             break
-        else:
-            color = ""
-            break
     
     return (isThrow, color)

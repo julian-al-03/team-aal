@@ -55,11 +55,7 @@ async def upload_audio(request):
 
             is_throw, color = filterText(text)
 
-            if color == "":
-                print("No color found")
-                return
-
-            path = capture_and_save_frame()
+            path = await capture_and_save_frame()
             ml = get_color_positions(path)
             index = get_color_index(ml, color)
 
