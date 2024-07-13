@@ -2,4 +2,4 @@
 websockets
 tflite-runtime
 numpy
-opencv-python
+opencv-python-headless

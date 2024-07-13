@@ -3,7 +3,7 @@ import numpy as np
 import tflite_runtime.interpreter as tflite
 
 # Load the TFLite model and allocate tensors
-interpreter = tflite.Interpreter(model_path="your_model.tflite")
+interpreter = tflite.Interpreter(model_path="vww_96_grayscale_quantized.tflite")
 interpreter.allocate_tensors()
 
 # Get input and output tensors
