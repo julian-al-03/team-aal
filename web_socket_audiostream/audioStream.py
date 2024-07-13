@@ -54,7 +54,7 @@ async def audio_stream(request):
     return ws
 
 async def serve_html(request):
-    return web.FileResponse('frontend.html')
+    return web.FileResponse('index.html')
 
 app = web.Application()
 app.router.add_get('/ws', audio_stream)
