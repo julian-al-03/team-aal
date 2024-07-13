@@ -3,5 +3,5 @@ websockets
 tflite-runtime
 numpy
 opencv-python-headless
-speech_recognition
+SpeechRecognition
 pydub
