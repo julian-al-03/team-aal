@@ -11,22 +11,26 @@ from speechToText import wav_to_text
 os.makedirs('audio_files', exist_ok=True)
 
 import traceback
-
 async def audio_stream(request):
     ws = web.WebSocketResponse()
     await ws.prepare(request)
     
     print("Client connected")
+    audio_data = b''
+    filename = None
+    recording = False
+    
     try:
-        audio_data = b''
-        filename = None
         async for msg in ws:
             if msg.type == WSMsgType.TEXT:
                 if msg.data == "start":
                     print("Starting new recording")
                     filename = f"audio_files/audio_{len(os.listdir('audio_files'))}.wav"
+                    audio_data = b''  # Reset audio data
+                    recording = True
                 elif msg.data == "stop":
                     print("Stopping recording")
+                    recording = False
                     if audio_data:
                         try:
                             print(f"Attempting to save file: {filename}")
@@ -52,13 +56,14 @@ async def audio_stream(request):
                             print(f"Error saving audio file: {e}")
                             traceback.print_exc()
                             await ws.send_str(f"Error saving audio file: {str(e)}")
-                        finally:
-                            audio_data = b''
                     else:
                         print("No audio data to save")
             elif msg.type == WSMsgType.BINARY:
-                audio_data += msg.data
-                print(f"Received {len(msg.data)} bytes of audio data")
+                if recording:
+                    audio_data += msg.data
+                    print(f"Received {len(msg.data)} bytes of audio data. Total: {len(audio_data)} bytes")
+                else:
+                    print("Received audio data while not recording")
             elif msg.type == WSMsgType.ERROR:
                 print('WebSocket connection closed with exception %s' % ws.exception())
     except Exception as e:
@@ -68,6 +73,7 @@ async def audio_stream(request):
         print("Client disconnected")
     
     return ws
+
 async def serve_html(request):
     return web.FileResponse('index.html')
 
