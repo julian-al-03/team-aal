@@ -8,6 +8,7 @@
     <button id="stopButton" disabled>Stop Recording</button>
     <div id="status"></div>
     <div id="transcription"></div>
+    <audio id="audioPlayback" controls style="display:none;"></audio>
 
     <script>
         let mediaRecorder;
@@ -16,23 +17,36 @@
         const stopButton = document.getElementById('stopButton');
         const statusDiv = document.getElementById('status');
         const transcriptionDiv = document.getElementById('transcription');
+        const audioPlayback = document.getElementById('audioPlayback');
 
         startButton.onclick = async function() {
             try {
-                const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-                mediaRecorder = new MediaRecorder(stream);
+                const stream = await navigator.mediaDevices.getUserMedia({ 
+                    audio: {
+                        echoCancellation: true,
+                        noiseSuppression: true,
+                        sampleRate: 44100,
+                        channelCount: 1
+                    } 
+                });
+                mediaRecorder = new MediaRecorder(stream, { mimeType: 'audio/webm' });
                 audioChunks = [];
 
                 mediaRecorder.ondataavailable = event => {
-                    audioChunks.push(event.data);
+                    if (event.data.size > 0) {
+                        audioChunks.push(event.data);
+                    }
                 };
 
                 mediaRecorder.onstop = () => {
-                    const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+                    const audioBlob = new Blob(audioChunks, { type: 'audio/webm' });
+                    const audioUrl = URL.createObjectURL(audioBlob);
+                    audioPlayback.src = audioUrl;
+                    audioPlayback.style.display = 'block';
                     sendAudioToServer(audioBlob);
                 };
 
-                mediaRecorder.start();
+                mediaRecorder.start(100); // Collect 100ms of audio at a time
                 startButton.disabled = true;
                 stopButton.disabled = false;
                 statusDiv.textContent = 'Recording...';
@@ -55,7 +69,7 @@
 
         function sendAudioToServer(audioBlob) {
             const formData = new FormData();
-            formData.append('audio', audioBlob, 'recording.wav');
+            formData.append('audio', audioBlob, 'recording.webm');
 
             fetch('/upload', {
                 method: 'POST',

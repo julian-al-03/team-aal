@@ -1,5 +1,4 @@
 import os
-import wave
 import ssl
 from aiohttp import web
 import speech_recognition as sr
@@ -10,33 +9,40 @@ import traceback
 # Ensure the audio_files directory exists
 os.makedirs('audio_files', exist_ok=True)
 
-def wav_to_text(wav_path):
-    # Your existing wav_to_text function here
-    pass
+def webm_to_wav(webm_data):
+    # Convert webm data to wav
+    audio = AudioSegment.from_file(io.BytesIO(webm_data), format="webm")
+    wav_io = io.BytesIO()
+    audio.export(wav_io, format="wav")
+    return wav_io.getvalue()
+
+def wav_to_text(wav_data):
+    recognizer = sr.Recognizer()
+    with sr.AudioFile(io.BytesIO(wav_data)) as source:
+        audio = recognizer.record(source)
+    try:
+        text = recognizer.recognize_google(audio)
+        return text
+    except sr.UnknownValueError:
+        return "Speech Recognition could not understand audio"
+    except sr.RequestError as e:
+        return f"Could not request results from Speech Recognition service; {e}"
 
 async def upload_audio(request):
     try:
-        data = await request.read()
-        filename = f"audio_files/audio_{len(os.listdir('audio_files'))}.wav"
-        
-        print(f"Attempting to save file: {filename}")
-        with wave.open(filename, 'wb') as wav_file:
-            wav_file.setnchannels(1)
-            wav_file.setsampwidth(2)
-            wav_file.setframerate(44100)
-            wav_file.writeframes(data)
-        print(f"Saved audio file: {filename}")
-        
-        # Perform speech-to-text conversion
-        try:
-            print("Starting speech-to-text conversion")
-            text = wav_to_text(filename)
-            print(f"Speech-to-text result: {text}")
+        reader = await request.multipart()
+        field = await reader.next()
+        if field.name == 'audio':
+            webm_data = await field.read()
+            wav_data = webm_to_wav(webm_data)
+            
+            filename = f"audio_files/audio_{len(os.listdir('audio_files'))}.wav"
+            with open(filename, 'wb') as f:
+                f.write(wav_data)
+            print(f"Saved audio file: {filename}")
+            
+            text = wav_to_text(wav_data)
             return web.json_response({"message": f"Audio saved as {filename}", "transcription": text})
-        except Exception as e:
-            print(f"Error in speech-to-text conversion: {e}")
-            traceback.print_exc()
-            return web.json_response({"error": f"Error in speech-to-text conversion: {str(e)}"}, status=500)
     except Exception as e:
         print(f"Error processing audio: {e}")
         traceback.print_exc()
