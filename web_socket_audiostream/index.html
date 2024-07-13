@@ -4,25 +4,26 @@
     <title>Audio Recorder</title>
 </head>
 <body>
-    <button id="startButton" disabled>Start Recording</button>
+    <button id="startButton">Start Recording</button>
     <button id="stopButton" disabled>Stop Recording</button>
     <div id="status"></div>
     <div id="transcription"></div>
 
     <script>
         let websocket;
+        let mediaRecorder;
+        let audioChunks = [];
         const startButton = document.getElementById('startButton');
         const stopButton = document.getElementById('stopButton');
         const statusDiv = document.getElementById('status');
         const transcriptionDiv = document.getElementById('transcription');
 
         function initWebSocket() {
-            // Make sure to use the correct IP and port
             websocket = new WebSocket('ws://172.16.25.197:8765/ws');
 
             websocket.onopen = function(event) {
                 statusDiv.textContent = 'Connected to server';
-                startButton.disabled = false;  // Enable start button when connected
+                startButton.disabled = false;
             };
 
             websocket.onmessage = function(event) {
@@ -45,29 +46,56 @@
             };
         }
 
-        startButton.onclick = function() {
+        startButton.onclick = async function() {
             if (websocket.readyState === WebSocket.OPEN) {
-                websocket.send('start');
-                startButton.disabled = true;
-                stopButton.disabled = false;
-                statusDiv.textContent = 'Recording...';
+                try {
+                    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                    mediaRecorder = new MediaRecorder(stream);
+                    audioChunks = [];
+
+                    mediaRecorder.ondataavailable = event => {
+                        audioChunks.push(event.data);
+                    };
+
+                    mediaRecorder.onstop = () => {
+                        const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+                        sendAudioToServer(audioBlob);
+                    };
+
+                    mediaRecorder.start();
+                    websocket.send('start');
+                    startButton.disabled = true;
+                    stopButton.disabled = false;
+                    statusDiv.textContent = 'Recording...';
+                } catch (err) {
+                    console.error('Error accessing microphone:', err);
+                    statusDiv.textContent = 'Error accessing microphone';
+                }
             } else {
                 statusDiv.textContent = 'WebSocket is not connected';
             }
         };
 
         stopButton.onclick = function() {
-            if (websocket.readyState === WebSocket.OPEN) {
+            if (websocket.readyState === WebSocket.OPEN && mediaRecorder && mediaRecorder.state === 'recording') {
+                mediaRecorder.stop();
                 websocket.send('stop');
                 startButton.disabled = false;
                 stopButton.disabled = true;
                 statusDiv.textContent = 'Stopped recording';
             } else {
-                statusDiv.textContent = 'WebSocket is not connected';
+                statusDiv.textContent = 'WebSocket is not connected or not recording';
             }
         };
 
-        // Initialize WebSocket connection
+        function sendAudioToServer(audioBlob) {
+            const reader = new FileReader();
+            reader.onload = function() {
+                websocket.send(reader.result);
+            };
+            reader.readAsArrayBuffer(audioBlob);
+        }
+
         initWebSocket();
     </script>
 </body>
